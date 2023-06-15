@@ -53,6 +53,7 @@ it('supports toggling an item', () => {
   ];
 
   const result = reducer(state, toggle({ id: '1' }));
+  expect(result).toEqual([expect.objectContaining({ packed: true })]);
 });
 
 it.todo('supports updating an item', () => {
